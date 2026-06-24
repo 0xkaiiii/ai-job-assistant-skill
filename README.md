@@ -34,23 +34,25 @@
 
 ## 安装方式
 
-### 方式一：按平台安装 Skill
+### 推荐方式：让 Agent 自动安装
 
-把 `skills/ai-job-assistant/` 复制到目标 Agent 平台的 skills 目录。不同平台目录可能不同，请以对应平台文档为准。
+把这个仓库链接发给你正在使用的 Agent，让它读取仓库内容并安装 Skill：
 
-```bash
-cp -R skills/ai-job-assistant <your-agent-skills-dir>/
+```text
+https://github.com/0xkaiiii/ai-job-assistant-skill
 ```
 
-### 方式二：作为 Codex 插件安装
+你可以直接这样说：
+
+```text
+请安装这个通用求职 Skill：https://github.com/0xkaiiii/ai-job-assistant-skill
+```
+
+Agent 会根据自己的平台规则，把 `skills/ai-job-assistant/` 安装到对应的 Skill 目录。
+
+### 可选：作为 Codex 插件安装
 
 仓库根目录保留 `.codex-plugin/plugin.json`，需要在 Codex 中作为插件使用时，可以按 Codex 插件方式安装。
-
-### Codex 本地 Skill 目录示例
-
-```bash
-cp -R skills/ai-job-assistant ~/.codex/skills/
-```
 
 ## 使用示例
 
