@@ -1,6 +1,10 @@
 # AI 求职顾问 Skill
 
-中文求职场景的 Codex Skill。它把岗位分析、简历生成、面试准备、HR 跟进、谈薪和求职进展记录整合成一套五阶段求职工作流。
+中文求职场景的通用 Agent Skill。它把岗位分析、简历生成、面试准备、HR 跟进、谈薪和求职进展记录整合成一套五阶段求职工作流，可用于 Codex、Claude Code、OpenClaw、WorkBuddy、QoderWork、Kimi 等支持 Skill/Agent 工作流的平台。
+
+## 适用平台
+
+这个 Skill 的核心内容是 `skills/ai-job-assistant/SKILL.md` 和简历模板文件，不绑定单一 Agent 平台。当前定位为各类 Agent 通用 Skill，已在仓库中保留 Codex 插件清单，同时也可以按普通 Skill 目录接入 Claude Code、OpenClaw、WorkBuddy、QoderWork、Kimi 等环境。
 
 ## 能力概览
 
@@ -30,13 +34,19 @@
 
 ## 安装方式
 
-### 方式一：作为 Codex 插件安装
+### 方式一：按平台安装 Skill
 
-将仓库克隆到本地插件目录后，在 Codex 中安装该插件即可。仓库根目录已经包含 `.codex-plugin/plugin.json`，技能文件位于 `skills/ai-job-assistant/`。
+把 `skills/ai-job-assistant/` 复制到目标 Agent 平台的 skills 目录。不同平台目录可能不同，请以对应平台文档为准。
 
-### 方式二：只安装 Skill
+```bash
+cp -R skills/ai-job-assistant <your-agent-skills-dir>/
+```
 
-如果只想使用 Skill，可以把 `skills/ai-job-assistant/` 复制到本机 Codex skills 目录：
+### 方式二：作为 Codex 插件安装
+
+仓库根目录保留 `.codex-plugin/plugin.json`，需要在 Codex 中作为插件使用时，可以按 Codex 插件方式安装。
+
+### Codex 本地 Skill 目录示例
 
 ```bash
 cp -R skills/ai-job-assistant ~/.codex/skills/
