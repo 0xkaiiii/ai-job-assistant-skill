@@ -4,7 +4,7 @@
 
 ## 已完成
 
-- 复制当前 `ai-job-assistant` Skill
+- 复制当前 `ai-job-advisor` Skill
 - 补齐 `.codex-plugin/plugin.json`
 - 编写中文 README
 - 添加 MIT LICENSE
@@ -38,4 +38,4 @@ git push -u origin main
 
 ## 发布后建议补充
 
-发布成功后，可以把 `.codex-plugin/plugin.json` 里的 `repository` 和 `homepage` 补成实际仓库地址。
+发布成功后，可以把仓库链接发给 Agent，让它根据平台规则自动安装。
