@@ -1,10 +1,10 @@
-# AI 求职顾问 Skill
+# AI Job Advisor Skill
 
 中文求职场景的通用 Agent Skill。它把岗位分析、简历生成、面试准备、HR 跟进、谈薪和求职进展记录整合成一套五阶段求职工作流，可用于 Codex、Claude Code、OpenClaw、WorkBuddy、QoderWork、Kimi 等支持 Skill/Agent 工作流的平台。
 
 ## 适用平台
 
-这个 Skill 的核心内容是 `skills/ai-job-assistant/SKILL.md` 和简历模板文件，不绑定单一 Agent 平台。当前定位为各类 Agent 通用 Skill，已在仓库中保留 Codex 插件清单，同时也可以按普通 Skill 目录接入 Claude Code、OpenClaw、WorkBuddy、QoderWork、Kimi 等环境。
+这个 Skill 的核心内容是 `skills/ai-job-advisor/SKILL.md` 和简历模板文件，不绑定单一 Agent 平台。当前定位为各类 Agent 通用 Skill，可按普通 Skill 目录接入 Codex、Claude Code、OpenClaw、WorkBuddy、QoderWork、Kimi 等环境。
 
 ## 能力概览
 
@@ -25,7 +25,7 @@
 ├── .codex-plugin/
 │   └── plugin.json
 ├── skills/
-│   └── ai-job-assistant/
+│   └── ai-job-advisor/
 │       ├── SKILL.md
 │       └── resume-template.html
 ├── LICENSE
@@ -48,7 +48,7 @@ https://github.com/0xkaiiii/ai-job-assistant-skill
 请安装这个通用求职 Skill：https://github.com/0xkaiiii/ai-job-assistant-skill
 ```
 
-Agent 会根据自己的平台规则，把 `skills/ai-job-assistant/` 安装到对应的 Skill 目录。
+Agent 会根据自己的平台规则，把 `skills/ai-job-advisor/` 安装到对应的 Skill 目录。
 
 ### 可选：作为 Codex 插件安装
 
